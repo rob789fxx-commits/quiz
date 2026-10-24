@@ -37,9 +37,9 @@ function Result({ correct }) {
       <h2>
         {correct} из {questions.length} угадано правильно
       </h2>
-      <a href="/">
-        <button>Попробовать снова</button>
-      </a>
+      <button onClick={() => window.location.reload()}>
+        Попробовать снова
+      </button>
     </div>
   );
 }
