@@ -3,25 +3,25 @@ import "./index.scss";
 
 const questions = [
   {
-    title: "React - это ... ?",
-    variants: ["библиотека", "фреймворк", "приложение"],
+    title: "React is ... ?",
+    variants: ["a library", "a framework", "an application"],
     correct: 0,
   },
   {
-    title: "Компонент - это ... ",
+    title: "A component is ... ",
     variants: [
-      "приложение",
-      "часть приложения или страницы",
-      "то, что я не знаю что такое",
+      "an application",
+      "a part of an application or a page",
+      "something I don't know anything about",
     ],
     correct: 1,
   },
   {
-    title: "Что такое JSX?",
+    title: "What is JSX?",
     variants: [
-      "Это простой HTML",
-      "Это функция",
-      "Это тот же HTML, но с возможностью выполнять JS-код",
+      "it's just HTML",
+      "it's a function",
+      "it's HTML with the ability to execute JS code",
     ],
     correct: 2,
   },
@@ -35,11 +35,9 @@ function Result({ correct }) {
         alt="quiz-result"
       />
       <h2>
-        {correct} из {questions.length} угадано правильно
+        {correct} out of {questions.length} answered correctly
       </h2>
-      <button onClick={() => window.location.reload()}>
-        Попробовать снова
-      </button>
+      <button onClick={() => window.location.reload()}>Try Again</button>
     </div>
   );
 }
